@@ -35,7 +35,8 @@ const cart = [
 
 //CODE HERE
 
- const summedPrice = cart.reduce((a,c)=> a+c);
+ const summedPrice = cart.map(element => element.price).reduce((previousvalue,currentvalue)=>previousvalue+currentvalue);
+ console.log(summedPrice)
 
 
 //////////////////PROBLEM 2////////////////////
@@ -54,6 +55,12 @@ const cart = [
 */
 
 //CODE HERE
+const calcFinalPrice = (cartTotal, couponValue, tax)=>{
+    tax = cartTotal*tax;
+    cartTotal = (cartTotal+tax)-couponValue;
+     return cartTotal;
+}
+console.log(calcFinalPrice(70, 6, .06));
 
 
 
@@ -79,6 +86,14 @@ const cart = [
 
 /*
     TEXT ANSWER HERE
+For the customer object, I have chosen the following properties with their datatypes
+orderId :  Number,
+mealName : String,
+quantity : Number,
+totalPrice : Number
+
+Reason
+Every customer will have a unique orderId and it will be a number so that is why I have chosen  number datatype for orderId. mealName will have a string value and that is why I chose string datatype and for quantity and total price, they will also have number value.
 
 */
 
@@ -88,3 +103,9 @@ const cart = [
 */
 
 //CODE HERE
+const customer = {
+    orderId : 101, 
+    mealName : "Noodles",
+    quantity : 1,
+    totalPrice : 12.99
+};

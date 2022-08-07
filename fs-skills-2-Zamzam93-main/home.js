@@ -133,7 +133,6 @@ console.log(deals[objIndex]);
 
 
 
-
 /*
     The restaurant is going to continue its
     family deal for another month. 

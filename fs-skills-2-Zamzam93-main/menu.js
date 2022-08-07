@@ -73,8 +73,8 @@ console.log(pizza.tags[1]);
 
 //CODE HERE
 
-pizza.price = 20;
-console.log(pizza.price);
+let {price} = pizza;
+console.log(price);
 
 
 /*
@@ -86,8 +86,8 @@ console.log(pizza.price);
 
 //CODE HERE
 
-pizza.category = 'hot';
-console.log(pizza.category);
+let {category} = pizza;
+console.log(category);
 
 
 //////////////////PROBLEM 3////////////////////

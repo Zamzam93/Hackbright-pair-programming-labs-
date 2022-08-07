@@ -28,7 +28,7 @@ class Employee{
     getSchedule(){
         console.log(`${this.name} works ${this.shifts}`);
     }
-}
+};
 
 
 /*
@@ -102,8 +102,8 @@ console.log(empTwo.name);
 
 class Manager extends Employee{
     constructor(name, shifts, ...employees){
-            super(Employee);
-            this.employees = []; 
+            super(name, shifts);
+            this.employees = [employees]; 
     }
     getEmployees(){
         console.log(`${this.name} manages ${this.employees}`);
@@ -112,7 +112,7 @@ class Manager extends Employee{
         this.employees.push(emp);
     }
 
-}
+};
 
 
 
